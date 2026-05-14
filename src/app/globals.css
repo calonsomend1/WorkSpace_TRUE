@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f9fafb;
+  --foreground: #111111;
+  --card: #ffffff;
+  --card-hover: #f3f4f6;
+  --border: #e5e7eb;
+  --muted: #6b7280;
+  --accent: #4f46e5;
+  --accent-hover: #4338ca;
+  --danger: #dc2626;
+  --danger-hover: #b91c1c;
+  --danger-soft-bg: #fef2f2;
+  --danger-soft-text: #dc2626;
+  --success: #16a34a;
+}
+
+.dark {
+  --background: #030712;
+  --foreground: #ffffff;
+  --card: #111827;
+  --card-hover: #1f2937;
+  --border: #1f2937;
+  --muted: #9ca3af;
+  --accent: #4f46e5;
+  --accent-hover: #4338ca;
+  --danger: #dc2626;
+  --danger-hover: #b91c1c;
+  --danger-soft-bg: #3f1515;
+  --danger-soft-text: #fca5a5;
+  --success: #22c55e;
+}
+
+.light {
+  --background: #f9fafb;
+  --foreground: #111111;
+  --card: #ffffff;
+  --card-hover: #f3f4f6;
+  --border: #e5e7eb;
+  --muted: #6b7280;
+  --accent: #4f46e5;
+  --accent-hover: #4338ca;
+  --danger: #dc2626;
+  --danger-hover: #b91c1c;
+  --danger-soft-bg: #fef2f2;
+  --danger-soft-text: #dc2626;
+  --success: #16a34a;
+}
+
+html, body {
+  min-height: 100%;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+body {
+   font-family: Arial, Helvetica, sans-serif;
+}
