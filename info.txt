@@ -1,1 +1,46 @@
+INSTALAR:
+
+https://nodejs.org la versión v24.11.0 LTS
+
+https://www.postgresql.org/download/windows la versión 18.3.
+
+CLONAR REPO:
+git bash
+
+git clone https://github.com/calonsomend1/WorkSpace_TRUE.git
+
+ENV:
+DATABASE_URL="postgresql://postgres:admin@localhost:5432/workspace_db"
+NEXTAUTH_SECRET="workspace_secret_key_2024"
+NEXTAUTH_URL="http://localhost:3000"
+GOOGLE_CLIENT_ID=279018178399-oe4u3no6p9ksej2avkruhk3jehkbv64i.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=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
+
+CREAR DB:
+
+psql -U postgres
+
+CREATE DATABASE workspace_db;
+\q
+
+SERVICIOS:
+
+(npm install)
+
+npm install next
+npm install react react-dom
+npm install prisma @prisma/client
+npm install next-auth @next-auth/prisma-adapter
+npm install bcryptjs
+npm install next-themes
 npm install lucide-react
+npm install tailwindcss @tailwindcss/postcss
+npm install eslint eslint-config-next
+
+APLICAR ESQUEMA BD:
+
+npx prisma db push
+
+INICIAR:
+
+npm run dev
