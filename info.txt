@@ -16,13 +16,6 @@ NEXTAUTH_URL="http://localhost:3000"
 GOOGLE_CLIENT_ID=279018178399-oe4u3no6p9ksej2avkruhk3jehkbv64i.apps.googleusercontent.com
 GOOGLE_CLIENT_SECRET=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
 
-CREAR DB:
-
-psql -U postgres
-
-CREATE DATABASE workspace_db;
-\q
-
 SERVICIOS:
 
 (npm install)
@@ -37,9 +30,20 @@ npm install lucide-react
 npm install tailwindcss @tailwindcss/postcss
 npm install eslint eslint-config-next
 
+
+CREAR DB:
+
+psql -U postgres
+
+CREATE DATABASE workspace_db;
+\q
+
+
 APLICAR ESQUEMA BD:
 
 npx prisma db push
+
+npx prisma generate
 
 INICIAR:
 
