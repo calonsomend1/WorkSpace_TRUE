@@ -9,13 +9,6 @@ git bash
 
 git clone https://github.com/calonsomend1/WorkSpace_TRUE.git
 
-ENV:
-DATABASE_URL="postgresql://postgres:admin@localhost:5432/workspace_db"
-NEXTAUTH_SECRET="workspace_secret_key_2024"
-NEXTAUTH_URL="http://localhost:3000"
-GOOGLE_CLIENT_ID=279018178399-oe4u3no6p9ksej2avkruhk3jehkbv64i.apps.googleusercontent.com
-GOOGLE_CLIENT_SECRET=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
-
 SERVICIOS:
 
 (npm install)
